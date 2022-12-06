@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - CALCULAR LA TABLA DE MULTIPLICAR</h1>
+<br>
+
+<script type="text/javascript">
+
+	function saltarLinea () {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");
+		document.write("<hr>");	
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+
+	}
+
+	function imprimir (frase) {
+
+		document.write("<big>" + frase + "</big>")
+		saltarLinea()
+
+
+	}
+
+	imprimir("WHILE")
+	var multiplicador = 1
+
+	while (multiplicador <= 10) {
+		
+
+		imprimir(5 * multiplicador);
+		multiplicador = multiplicador + 1;
+	
+	}
+
+	imprimir("FOR")
+
+	// el bucle for dentro de losparametros hay tres partes que se presentan como el primero es el iniciador (elcual es una variable, que en el WHILE va por fuera en el for es parte del parametro), el segundo es la condición y como ultimo el incrementador.
+
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+
+		imprimir(5 * multiplicador);
+
+	}
+
+
+
+
+	
+
+</script>
+
