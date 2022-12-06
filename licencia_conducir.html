@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE FILTRO PARA EL MANEJO DE AUTOMOVILES</h1><br>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    var nombre = prompt("¿Digita tu nombre");
+
+
+    if (edad <= 17 && tieneLicencia == "S") {
+
+    	imprimir(nombre + ", No puedes conducir / tienes que tener la edad minima de 18 años");
+
+    } else if (edad <= 17 && tieneLicencia == "N" ) {
+
+    		imprimir(nombre + ", No puedes conducir");
+
+    }	else if (edad >= 18 && edad <=85 && tieneLicencia == "S" ) {
+
+    		imprimir(nombre + ", Puedes conducir");
+
+    }  else if (edad >= 18 && edad <= 85 && tieneLicencia == "N" ) {
+
+    		imprimir(nombre + ", No puedes conducir");
+
+    }  else if (edad > 85 && tieneLicencia == "S" ) {
+
+    		imprimir(nombre + ", No puedes conducir / Por la mayoria de edad superior a los 85 ya no puedes conducir");
+
+    }  else {
+
+    		imprimir(nombre + ", No puedes conducir");
+
+    }
+
+
+</script>

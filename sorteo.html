@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+<br>
+
+<script type="text/javascript">
+
+	function saltarLinea () {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");
+		document.write("<hr>");	
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+
+	}
+
+	function imprimir (frase) {
+
+		document.write("<big>" + frase + "</big>")
+		saltarLinea()
+
+
+	}
+
+	function sorteo (n) {
+
+		return Math.round(Math.random() * n);
+
+	}
+
+	var numeroPensado = sorteo(10);
+	var numeroLanzado = parseInt(prompt("Introdusca un numero dentro del rango 0 a 10"));
+	var nombre = prompt("Intrdodusca un nombre");
+
+	if (numeroPensado == numeroLanzado) {
+
+		imprimir(nombre + ", Excelente la atinastes");
+		
+	} else {
+
+		if (numeroPensado > numeroLanzado) {
+
+   			imprimir(nombre + ", ***No la atinastes*** el numero de la maquina erá mayor");
+
+   		} else {
+
+   			imprimir(nombre + ", ***No la atinastes*** el numero pesando por la maquina era menor");
+   		}
+   		
+
+   	}
+                
+</script>
+
